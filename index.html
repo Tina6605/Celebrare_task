@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <div class="header">
+                <img src="logo.png" alt="Das Logo" class="logo">
+                <p class="new-customer">
+                    Are you a new customer? 
+                    <div class="dropdown">
+                        <a href="#" class="enroll-link" id="enroll-btn">Enroll Now</a>
+                        <div class="dropdown-content" id="enroll-dropdown">
+                            <a href="#"><span class="checkmark">✔</span> Access your loans online</a>
+                            <a href="#"><span class="checkmark">✔</span> Pay your mortgage online</a>
+                            <a href="#"><span class="checkmark">✔</span> View your mortgage statements</a>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <h2>Welcome</h2>
+            <p>Sign in to your account</p><br>
+            <form id="loginForm">
+                <label for="online-id">Online ID</label>
+                <input type="text" id="online-id" name="online-id" placeholder="Online ID" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <div class="remember">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me"> Remember me</label>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="links">
+                <a href="#">Forgot Online ID?</a>
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="house-image.jpg" alt="House">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
